@@ -1,0 +1,56 @@
+.apps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1600px;
+  overflow-y: scroll;
+  height: 700px;
+  gap: 25px;
+  border-radius: 15px;
+  border: 2px solid #0070C5;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.application {
+  width: 300px;
+  height: 350px;
+  overflow-y: auto;
+  padding: 30px;
+  margin: 0;
+  background-color: #FFD500;
+}
+.application p {
+  margin-bottom: 5px;
+  max-width: 200px;
+}
+.application span {
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  white-space: pre-wrap;
+}
+.application span:hover {
+  color: grey;
+}
+
+.download {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-decoration: underline;
+}
+
+.stats {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #FFD500;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}/*# sourceMappingURL=admin.css.map */

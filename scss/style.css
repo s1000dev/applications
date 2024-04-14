@@ -1,0 +1,305 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  height: 100vh;
+  background-color: #00D98D;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1850px;
+  padding: 0 15px;
+}
+
+.btn {
+  text-decoration: none;
+  color: #FFD500;
+  padding: 15px;
+  background-color: #FF6969;
+  cursor: pointer;
+}
+
+.header {
+  background-color: #0070C5;
+  padding: 20px 0;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Arial";
+  font-size: 32px;
+  font-weight: 700;
+}
+.header__link {
+  text-decoration: none;
+  color: #FFD500;
+  padding: 15px;
+  background-color: #FF6969;
+  position: relative;
+}
+.header__link::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: "../img/free-sticker-paper-plane-8136631.png";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+.header__exit {
+  text-decoration: none;
+  color: #FF6969;
+  padding: 5px;
+  display: block;
+  border: 1px solid #FF6969;
+}
+
+.notes {
+  padding-bottom: 50px;
+}
+.notes__inner {
+  display: flex;
+  gap: 58px;
+  flex-wrap: wrap;
+}
+.notes__note {
+  background-color: #FFD500;
+  padding: 15px;
+}
+
+.note {
+  cursor: pointer;
+  width: 300px;
+  min-height: 300px;
+}
+.note__inner {
+  position: relative;
+}
+.note__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.note__heading {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+.note__text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.note__bottom {
+  position: absolute;
+  bottom: -185px;
+  right: 5px;
+  display: flex;
+  justify-content: end;
+}
+.note-left {
+  transform: rotate(3deg);
+}
+.note-right {
+  transform: rotate(-3deg);
+}
+
+.footer {
+  background-color: #0070C5;
+}
+.footer__inner {
+  padding: 15px 0;
+}
+.footer__text {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #FF6969;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.login__inner {
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login__form {
+  background-color: #FFD500;
+  padding: 100px;
+  box-shadow: 5px 5px 3px #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.login__form input {
+  border: 2px solid #00D98D;
+  padding: 10px;
+}
+.login__form input::placeholder {
+  color: black;
+}
+.login__btn {
+  border: none;
+  font-size: 32px;
+}
+
+.register__inner {
+  padding: 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.register__form {
+  background-color: #FFD500;
+  padding: 100px;
+  box-shadow: 5px 5px 3px #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.register__form input {
+  border: 2px solid #00D98D;
+  padding: 10px;
+}
+.register__form input::placeholder {
+  color: black;
+}
+.register__btn {
+  border: none;
+  font-size: 32px;
+}
+
+.big__inner {
+  max-width: 800px;
+  padding: 50px 10px;
+  background-color: #FFD500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.big__submit {
+  padding: 20px 35px;
+  background-color: #00D98D;
+}
+
+.apps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  height: 400px;
+  gap: 25px;
+  border-radius: 15px;
+  border: 2px solid #0070C5;
+  padding: 10px;
+}
+.apps p:has(span) {
+  position: relative;
+}
+.apps p:has(span)::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../edit.svg");
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  top: -2px;
+}
+
+.apply,
+.download {
+  margin-top: 15px;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-decoration: underline;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.application {
+  width: 300px;
+  height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 30px;
+  margin: 0;
+  background-color: #FFD500;
+}
+
+.form {
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.form input {
+  font-size: 24px;
+}
+.form input::placeholder {
+  font-size: 16px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}/*# sourceMappingURL=style.css.map */
